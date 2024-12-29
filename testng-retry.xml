@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Crm Website Testing"> 
+<listeners>
+    <listener class-name= "com.Analyzer.myTransformer" />
+    </listeners>
+    <test name="Test">
+    <parameter name="url" value="https://www.zoho.com/crm/request-migration-assistance.html"></parameter>
+        <classes>
+            <class name="com.qa.pages.RetryRunTime"/>
+        </classes>
+    </test>
+</suite>
